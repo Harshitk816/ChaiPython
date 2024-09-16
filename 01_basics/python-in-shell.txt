@@ -1,0 +1,31 @@
+>>> import os           #this basically imports the os info and its methods
+>>> os.getcwd()         #method to get the current working directory(cwd)
+'C:\\Users\\Harshit\\Desktop\\Hitesh Chaudhary\\Chai Aur Code Python\\01_basics'
+>>> for c in "chai":        #for-in loop (indentation sensitive)
+...     print(c)
+...
+c
+h
+a
+i
+
+
+>>> import hello_chai         #import our own local file, this will import and execute the file 
+Hello
+>>> hello_chai.chai("Mint tea") #accessing the method of our imported file
+Mint tea
+>>>
+
+
+
+>>> from importlib import reload        #this imported library basically reload the file with any changes in it later
+>>> reload(hello_chai)                  #this reloaded the file hello_chai
+Hello
+<module 'hello_chai' from 'C:\\Users\\Harshit\\Desktop\\Hitesh Chaudhary\\Chai Aur Code Python\\01_basics\\hello_chai.py'>
+
+If we try to access a file with changes but not reloaded we will get this error 
+
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'hello_chai' has no attribute 'chai_onw'. Did you mean: 'chai_one'?
+>>> hello_chai.chai_one 
+
